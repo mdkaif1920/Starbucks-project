@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        .tom{
+            height: 821px;
+            width: 100%;
+            background-image: url(image/Tom.jpg);
+            background-size: cover; /* Optional: cover the entire screen */
+            background-repeat: no-repeat; /* Prevent repeating */
+            background-position: center; /* Center the image */
+            display: flex;
+            align-items: center;
+            
+            
+        }
+        .feedback {
+            height: 600px;
+            width: 400px;
+            
+            margin-left: 20px;
+            
+            border-radius: 50px;
+            backdrop-filter: blur(10px);
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            transition-property: all;
+              transition-duration: 1s;
+              transition-timing-function: ease-in-out;
+              transition-delay: 0s;
+
+            }
+            .feedback:hover{
+                box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+            }
+            .feedback h1{
+              
+                margin-left: 120px;
+                margin-top: 40px;
+            }
+            .feedback .name{
+                height: 53px;
+                border-radius: 33px;
+                margin: 30px;
+                padding: 27px;
+                border: none;
+              
+            }
+
+           
+            
+
+            .feedback .name1{
+                height: 200px;
+                border-radius: 33px;
+                margin-left: 33px;
+                width: 326px;
+                padding: 17px;
+                border: none;
+            }
+            .feedback button{
+               
+              height: 40px;
+              width: 100px;
+              margin:20px 0px 0px 150px ;
+              border: 0.5px solid black;
+              border-radius: 5px;
+              transition-property: all;
+              transition-duration: o.7s;
+              transition-timing-function: ease-in-out;
+
+
+            }
+.feedback button:hover{
+    height: 42px;
+    width: 102px;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  
+}
+.feedback button:active{
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(233,231,148,1) 100%);
+   
+}
+
+.feedback input,textarea::placeholder{
+    font-size: 1rem;
+}
+            
+
+        
+        </style>
+</head>
+<body>
+  <div class="tom">
+    <form action="https://api.web3forms.com/submit" method="POST" class="feedback">
+    <div class="feedback">
+       
+        <input type="hidden" name="access_key" value="9a669fdf-ff16-4475-8cf0-ed2dd42440f3">
+        <h1>Feedback</h1>
+        
+        <input type="text" name="Name" class="name" placeholder="Name" required>
+        <textarea name="message" class="name1" placeholder="Enter your feedback " required></textarea>
+        <button type="submit"> Submit</button>
+    </form>
+    </div>
+
+  </div>
+</html>
