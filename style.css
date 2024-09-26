@@ -553,23 +553,23 @@ footer .footer5 {
 .footer5 h3, img:hover  {
     cursor: pointer;
 }
-.button{
-    height: 80px;
-    width: 100%;
-   
-    border: 2px solid black;
-}
+
 .button button{
     height: 40px;
     width: 100px;
    margin:20px 0px 0px 50% ;
    border: 1px solid black;
-   border-radius: 5px;
+   border-radius: 22px;
+   position: fixed;
+    left: 40%;
+    top: 83%;
 
 }
 .button button:hover{
     cursor: pointer;
-    
+    scale: 1.1;
+    transition: all;
+    transition-duration: 0.5s;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
   
 }
